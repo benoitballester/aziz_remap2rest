@@ -8,10 +8,10 @@ Get the development version from `GitHub`
 --------------------------------------------
 
 .. code-block:: bash
-
+    # (update install python on OsX) brew install python
     git clone https://github.com/benoitballester/aziz_remap2rest.git
     cd aziz_remap2rest
-    pip install -r requirements.txt
+    (sudo) pip install -r requirements.txt
     python manage.py migrate
     python manage.py runserver
 

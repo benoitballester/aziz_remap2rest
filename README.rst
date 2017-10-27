@@ -5,7 +5,7 @@ This is the source code of ReMap 2018 REST API developed in Python/Django and Dj
 
 
 Get the development version from `GitHub`
---------------------------------------------
+----------------------------------------
 
 .. code-block:: bash
     brew install python

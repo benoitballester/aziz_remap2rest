@@ -118,8 +118,9 @@ class TfListViewSet(ListAPIView):
     pagination_class = TfResultsSetPagination
     throttle_classes = (UserRateThrottle,)
     filter_backends = [SearchFilter, OrderingFilter, ]
-    #search_fileds = ['base_id', 'collection','name','version',]
-    #filter_fileds = ['base_id', 'collection','name', 'version',]
+    search_fileds = ['transcription_factor', 'superclass','family','subfamily','source','uniprot','refseq',]
+    filter_fileds = ['transcription_factor', 'superclass','family','subfamily','source','uniprot','refseq',]
+
     parser_classes = (YAMLParser,)
     renderer_classes = [ renderers.JSONRenderer, JSONPRenderer, YAMLRenderer, renderers.BrowsableAPIRenderer]
 
